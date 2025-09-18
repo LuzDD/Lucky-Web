@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ruleta de colores</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/game.css">
+</head>
+<body>
+
+      <!-- ================================= HEADER / NAV ================================ -->
+    <header class="site-header">
+      <nav class="nav container" aria-label="Principal">
+        <ul class="menu">
+          <li class="brand">
+            <a href="/html/index.html" class="brand__link">
+              <img width="50" height="50" src="/img/1.png" alt="Logo del sitio">
+              
+            </a>
+          </li>
+
+          <li><a href="/html/index.html" aria-current="page">Inicio</a></li>
+
+          <li class="has-dropdown">
+            <details>
+              <summary>Juegos</summary>
+              <ul class="dropdown">
+                <li><a href="/html/game/cara-o-cruz.html">Cara o Cruz</a></li>
+                <li><a href="/html/game/piedra-papel-tijera.html">Piedra · Papel · Tijera</a></li>
+                <li><a href="/html/game/tarot.html">Tarot</a></li>
+                <li><a href="/html/game/bola8.html">Bola 8 mágica</a></li>
+                <li><a href="/html/game/dados.html">Dados</a></li>
+                <li><a href="html/game/ruleta-colores.html">Ruleta de colores</a></li>
+              </ul>
+            </details>
+          </li>
+
+          <li><a href="/html/curiosities.html">Curiosidades</a></li>
+          <li><a href="/html/credits.html">Créditos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ============================== CONTENIDO DEL JUEGO ============================== -->
+  <main>
+    <section class="game container" aria-labelledby="game-title">
+      <h1 id="game-title">Ruleta de colores</h1>
+
+      <div class="game__layout">
+        <!-- área principal del juego -->
+        <div id="zona-juego" class="game__board" role="region" aria-label="Zona del juego">
+          <!-- canvas/animación/elementos del juego -->
+          <p class="placeholder">[Zona del juego]</p>
+
+          <!--  acciones comunes -->
+          <div class="game__actions">
+            <button class="btn cta" id="btn-primary">Jugar</button>
+            <button class="btn" id="btn-secondary">Reiniciar</button>
+          </div>
+        </div>
+
+        <!-- Instrucciones a la derecha -->
+        <aside class="game__aside" aria-labelledby="aside-title">
+          <h2 id="aside-title">Instrucciones</h2>
+          <p>
+            Formula una pregunta cerrada. La bola te dará una respuesta al azar:
+            positiva, negativa o neutral.
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+<!-- =============================== FOOTER =============================== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <nav class="footer__nav" aria-label="Inferior">
+      <ul>
+        <li><a href="./curiosities.html">Curiosidades</a></li>
+        <li><a href="./credits.html">Créditos</a></li>
+        <li><a class="to-top" href="#top">Volver arriba</a></li>
+      </ul>
+    </nav>
+
+    <p class="legal">
+      &copy; 2025 · Proyecto académico ·
+      <a href="https://www.instagram.com/lucy_____l/" target="_blank" rel="noopener">lucy_____l</a>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>

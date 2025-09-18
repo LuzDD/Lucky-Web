@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Juegos de Decisión – Inicio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+ 
+  <body id="top">
+    <!-- ================================= HEADER / NAV ================================ -->
+    <header class="site-header">
+      <nav class="nav container" aria-label="Principal">
+        <ul class="menu">
+          <li class="brand">
+            <a href="index.html" class="brand__link">
+              
+              <img width="50" height="50" src="img/1.png" alt="Logo del sitio">
+            </a>
+          </li>
+
+         
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+
+          <li class="has-dropdown">
+            <details>
+              <summary>Juegos</summary>
+              <ul class="dropdown">
+             
+                <li><a href="/html/game/cara-o-cruz.html">Cara o Cruz</a></li>
+                <li><a href="/html/game/piedra-papel-tijera.html">Piedra · Papel · Tijera</a></li>
+                <li><a href="/html/game/tarot.html">Tarot</a></li>
+                <li><a href="/html/game/bola8.html">Bola 8 mágica</a></li>
+                <li><a href="/html/game/dados.html">Dados</a></li>
+                <li><a href="/html/game/ruleta-colores.html">Ruleta de colores</a></li>
+              </ul>
+            </details>
+          </li>
+
+          <li><a href="/html/curiosities.html">Curiosidades</a></li>
+          <li><a href="/html/credits.html">Créditos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- =============================== HERO =============================== -->
+    <main>
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <h1 id="hero-title">H1 descripción página</h1>
+            <p>
+              Texto introductorio: este sitio reúne mini-juegos para ayudar a tomar
+              decisiones de forma rápida y divertida. Esta es la Fase 1 del
+              proyecto (HTML puro); en la Fase 2 añadiremos estilos y animaciones.
+            </p>
+          </div>
+
+          <figure class="hero__image">
+            <!-- antes: /img/bola8.png -->
+            <img src="/img/bola8.png" alt="Ilustración representativa de los juegos">
+            <figcaption class="visually-hidden">Imagen representativa</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ============================= GALERÍA DE JUEGOS ============================ -->
+      <section class="section container" aria-labelledby="juegos-title">
+        <h2 id="juegos-title">Juegos</h2>
+
+        <ul class="games" role="list">
+          <li>
+            <!-- antes: href="game/..." (faltaba html/) -->
+            <a class="card card--game" href="/html/game/cara-o-cruz.html">
+              <figure class="card__thumb">
+                <!-- antes: /img/tarot.png -->
+                <img src="/img/tarot.png" alt="Previsualización de Cara o Cruz" loading="lazy">
+              </figure>
+              <h3 class="card__title">Cara o Cruz</h3>
+              <p class="card__desc">Decide en segundos con una moneda virtual.</p>
+            </a>
+          </li>
+
+          <li>
+            <a class="card card--game" href="/html/game/piedra-papel-tijera.html">
+              <figure class="card__thumb">
+                <img src="/img/tarot.png" alt="Previsualización de Piedra · Papel · Tijera" loading="lazy">
+              </figure>
+              <h3 class="card__title">Piedra · Papel · Tijera</h3>
+              <p class="card__desc">El clásico desempate con reglas simples.</p>
+            </a>
+          </li>
+
+          <li>
+            <a class="card card--game" href="/html/game/tarot.html">
+              <figure class="card__thumb">
+                <img src="/img/tarot.png" alt="Previsualización de Tarot" loading="lazy">
+              </figure>
+              <h3 class="card__title">Tarot</h3>
+              <p class="card__desc">Una carta para una señal poética.</p>
+            </a>
+          </li>
+
+          <li>
+            <a class="card card--game" href="/html/game/bola8.html">
+              <figure class="card__thumb">
+                <img src="/img/tarot.png" alt="Previsualización de Bola 8 mágica" loading="lazy">
+              </figure>
+              <h3 class="card__title">Bola 8 mágica</h3>
+              <p class="card__desc">Haz una pregunta y obtén una respuesta.</p>
+            </a>
+          </li>
+
+          <li>
+            <a class="card card--game" href="/html/game/dados.html">
+              <figure class="card__thumb">
+                <img src="/img/tarot.png" alt="Previsualización de Dados" loading="lazy">
+              </figure>
+              <h3 class="card__title">Dados</h3>
+              <p class="card__desc">Lanza y deja que el número decida.</p>
+            </a>
+          </li>
+
+          <li>
+            <a class="card card--game" href="/html/game/ruleta-colores.html">
+              <figure class="card__thumb">
+                <img src="/img/tarot.png" alt="Previsualización de Ruleta de colores" loading="lazy">
+              </figure>
+              <h3 class="card__title">Ruleta de colores</h3>
+              <p class="card__desc">Gira y quédate con el color ganador.</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- =============================== FOOTER =============================== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <nav class="footer__nav" aria-label="Inferior">
+          <ul>
+            
+            <li><a href="/html/curiosities.html">Curiosidades</a></li>
+            <li><a href="/html/credits.html">Créditos</a></li>
+            <li><a class="to-top" href="#top">Volver arriba</a></li>
+          </ul>
+        </nav>
+
+        <p class="legal">
+          &copy; 2025 · Proyecto académico ·
+          <a href="https://www.instagram.com/lucy_____l/" target="_blank" rel="noopener">lucy_____l</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

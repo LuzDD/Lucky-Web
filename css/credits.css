@@ -1,0 +1,89 @@
+/* ===== Créditos: layout y componentes (usa la paleta global) ===== */
+
+.creditos { padding-block: 24px 32px; }
+
+/* Grid principal: 1 col en móvil, 2 cols en desktop como tu Figma */
+.creditos__grid{
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;                 /* móvil */
+  align-items: start;
+}
+@media (min-width: 900px){
+  .creditos__grid{ grid-template-columns: 1.1fr 1fr; }   /* izq/dcha */
+}
+
+/* Panel izquierdo */
+.creditos__info{
+  display: grid;
+  gap: 16px;
+  border: 1px solid rgba(53,63,142,.35);
+  border-radius: 16px;
+  padding: 16px;
+  background: rgba(17,12,34,.50);
+  box-shadow: var(--shadow-soft);
+}
+
+.creditos__figure{
+  border: 1px solid rgba(53,63,142,.35);
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(239,150,189,.22), transparent 42%),
+    radial-gradient(circle at 80% 68%, rgba(231,157,117,.22), transparent 48%),
+    linear-gradient(135deg, rgba(58,85,166,.55), rgba(85,73,171,.55));
+  padding: 10px;
+}
+.foto-autor{
+  display:block; width:100%; height:auto; border-radius:10px; object-fit:cover;
+  max-height: 360px;                          /* ajusta si quieres más alto */
+}
+
+.creditos__texto{ color: var(--text); opacity:.9; }
+
+/* Panel derecho (formulario) */
+.creditos__form{
+  border: 1px solid rgba(53,63,142,.35);
+  border-radius: 16px;
+  padding: 60px;
+  background: rgba(17,12,34,.50);
+  box-shadow: var(--shadow-soft);
+}
+.creditos__form h2{ margin: 0 0 12px; }
+
+.form{
+  display:grid;
+  gap: 10px;
+}
+.form label{ font-size: 14px; color: var(--muted); }
+
+.form input,
+.form textarea{
+  width:100%;
+  padding: 10px 12px;
+  color: var(--text);
+  background: rgba(21,15,42,.55);
+  border: 1px solid rgba(53,63,142,.45);
+  border-radius: 10px;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.form input::placeholder,
+.form textarea::placeholder{ color: rgba(235,204,187,.65); }
+
+.form input:focus,
+.form textarea:focus{
+  outline: none;
+  border-color: var(--primary-700);
+  box-shadow: 0 0 0 3px rgba(85,73,171,.28);
+}
+
+.form .btn{
+  justify-self: start;               /* botón a la izquierda como Figma */
+  margin-top: 8px;
+  background: var(--primary);
+  border: 1px solid var(--line);
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 999px;
+  transition: background .2s ease, filter .2s ease;
+}
+.form .btn:hover{ background: var(--primary-700); }

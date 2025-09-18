@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créditos</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/credits.css">
+</head>
+<body>
+
+     <!-- ================================= HEADER / NAV ================================ -->
+<header class="site-header">
+      <nav class="nav container" aria-label="Principal">
+        <ul class="menu">
+          <li class="brand">
+            <a href="/index.html" class="brand__link">
+              <img width="50" height="50" src="/img/1.png" alt="Logo del sitio">
+              
+            </a>
+          </li>
+
+          <li><a href="/index.html" aria-current="page">Inicio</a></li>
+
+          <li class="has-dropdown">
+            <details>
+              <summary>Juegos</summary>
+              <ul class="dropdown">
+                <li><a href="/html/game/cara-o-cruz.html">Cara o Cruz</a></li>
+                <li><a href="/html/game/piedra-papel-tijera.html">Piedra · Papel · Tijera</a></li>
+                <li><a href="/html/game/tarot.html">Tarot</a></li>
+                <li><a href="/html/game/bola8.html">Bola 8 mágica</a></li>
+                <li><a href="/html/game/dados.html">Dados</a></li>
+                <li><a href="html/game/ruleta-colores.html">Ruleta de colores</a></li>
+              </ul>
+            </details>
+          </li>
+
+          <li><a href="/html/curiosities.html">Curiosidades</a></li>
+          <li><a href="/html/credits.html">Créditos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<!-- ============================ CONTENIDO CRÉDITOS ============================ -->
+  <main class="creditos container" aria-labelledby="creditos-title">
+      <h1 id="creditos-title" class="visually-hidden">Créditos</h1>
+
+      <section class="creditos__grid">
+        <!-- Columna izquierda: imagen + texto -->
+        <div class="creditos__info">
+          <figure class="creditos__figure">
+            <!-- corrige la ruta: desde /html apunta a /webdecisions/img/... -->
+            <img class="foto-autor" src="/img/bola8.png" alt="Imagen de la autora">
+          </figure>
+
+          <p class="creditos__texto">
+            Proyecto académico orientado a explorar micro-interacciones lúdicas para ayudar
+            a tomar decisiones cotidianas. Se inspira en estéticas cósmicas y una paleta
+            de tonos oscuros con acentos cálidos.
+          </p>
+        </div>
+
+        <!-- Columna derecha: formulario de contacto -->
+        <div class="creditos__form">
+          <h2>Formulario contacto</h2>
+
+          <form action="#" method="post" class="form">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+
+            <label for="asunto">Asunto</label>
+            <textarea id="asunto" name="asunto" rows="4" required></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+          </form>
+        </div>
+      </section>
+  </main>
+
+
+<!-- =============================== FOOTER =============================== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <nav class="footer__nav" aria-label="Inferior">
+      <ul>
+        <li><a href="./curiosities.html">Curiosidades</a></li>
+        <li><a href="./credits.html">Créditos</a></li>
+        <li><a class="to-top" href="#top">Volver arriba</a></li>
+      </ul>
+    </nav>
+
+    <p class="legal">
+      &copy; 2025 · Proyecto académico ·
+      <a href="https://www.instagram.com/lucy_____l/" target="_blank" rel="noopener">lucy_____l</a>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>
